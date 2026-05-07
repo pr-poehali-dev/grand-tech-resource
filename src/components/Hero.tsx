@@ -20,8 +20,8 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="https://cdn.poehali.dev/projects/f95b400b-6e56-46c5-9ed2-d0ebf9bd3cc6/files/56dcfee4-89d3-47a8-9e66-5aa5a323834d.jpg"
-          alt="Газопоршневая установка"
+          src="https://cdn.poehali.dev/projects/f95b400b-6e56-46c5-9ed2-d0ebf9bd3cc6/files/e6ab6db9-ce18-4729-9b35-a89951b591dd.jpg"
+          alt="Промышленное предприятие"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a0b0d] via-[#0a0b0d]/85 to-[#0a0b0d]/40" />
