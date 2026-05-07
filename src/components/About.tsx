@@ -1,7 +1,5 @@
 import Icon from '@/components/ui/icon';
 
-const TEAM_IMG = 'https://cdn.poehali.dev/projects/f95b400b-6e56-46c5-9ed2-d0ebf9bd3cc6/bucket/79e31da9-bf71-4981-81cc-0a26ec4b2969.png';
-
 const advantages = [
   {
     icon: 'Zap',
@@ -51,8 +49,8 @@ export default function About() {
 
       <div className="relative max-w-7xl mx-auto px-6">
 
-        {/* Top: text + image */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        {/* Top: text */}
+        <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-px bg-[#d97706]" />
@@ -74,46 +72,21 @@ export default function About() {
                 бесперебойную работу оборудования и снижение эксплуатационных затрат.
               </p>
             </div>
-
-            {/* Segment chips */}
-            <div className="grid grid-cols-2 gap-2">
-              {segments.map((s, i) => (
-                <div key={i} className="flex items-center gap-3 p-3 border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.02)]">
-                  <div className="w-7 h-7 flex-shrink-0 flex items-center justify-center bg-[rgba(217,119,6,0.1)] clip-corner">
-                    <Icon name={s.icon} fallback="Zap" size={13} className="text-[#d97706]" />
-                  </div>
-                  <div>
-                    <div className="font-oswald text-[12px] text-white tracking-wide leading-tight">{s.label}</div>
-                    <div className="font-ibm text-[10px] text-[#454b56] leading-tight mt-0.5">{s.sub}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
 
-          {/* Team image */}
-          <div className="relative">
-            <div className="absolute -inset-3 bg-gradient-to-br from-[#d97706]/8 to-transparent blur-2xl" />
-            <div className="relative clip-corner-lg overflow-hidden border border-[rgba(255,255,255,0.07)]">
-              <img
-                src={TEAM_IMG}
-                alt="Команда ГрандТехРесурс"
-                className="w-full h-80 object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0e1015]/70 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                <div className="font-mono-ibm text-[10px] text-[#d97706] tracking-[0.2em] uppercase">
-                  Профессиональная команда
+          {/* Segment chips */}
+          <div className="grid grid-cols-2 gap-2 lg:mt-20">
+            {segments.map((s, i) => (
+              <div key={i} className="flex items-center gap-3 p-3 border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.02)]">
+                <div className="w-7 h-7 flex-shrink-0 flex items-center justify-center bg-[rgba(217,119,6,0.1)] clip-corner">
+                  <Icon name={s.icon} fallback="Zap" size={13} className="text-[#d97706]" />
                 </div>
-                <div className="font-mono-ibm text-[10px] text-[#6b7280] tracking-wide">
-                  15+ лет опыта
+                <div>
+                  <div className="font-oswald text-[12px] text-white tracking-wide leading-tight">{s.label}</div>
+                  <div className="font-ibm text-[10px] text-[#454b56] leading-tight mt-0.5">{s.sub}</div>
                 </div>
               </div>
-            </div>
-            <div className="absolute top-0 right-0 w-6 h-px bg-[#d97706]" />
-            <div className="absolute top-0 right-0 w-px h-6 bg-[#d97706]" />
-            <div className="absolute bottom-0 left-0 w-6 h-px bg-[#d97706]" />
-            <div className="absolute bottom-0 left-0 w-px h-6 bg-[#d97706]" />
+            ))}
           </div>
         </div>
 
