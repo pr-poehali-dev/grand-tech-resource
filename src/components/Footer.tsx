@@ -13,21 +13,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-7 h-7 relative">
-                <div className="absolute inset-0 bg-[#d97706] clip-corner" />
-                <div className="absolute inset-[2px] bg-[#070809] clip-corner flex items-center justify-center">
-                  <div className="w-1.5 h-1.5 bg-[#d97706] rounded-full" />
-                </div>
-              </div>
-              <div>
-                <div className="font-oswald text-white text-sm font-semibold tracking-wider">
-                  ГРАНДТЕХ<span className="text-[#d97706]">РЕСУРС</span>
-                </div>
-                <div className="font-mono-ibm text-[#454b56] text-[9px] tracking-[0.15em] uppercase">
-                  Смазочные материалы
-                </div>
-              </div>
+            <div className="mb-4">
+              <img
+                src="https://cdn.poehali.dev/projects/f95b400b-6e56-46c5-9ed2-d0ebf9bd3cc6/bucket/dcbbc5df-5ab4-46f5-8093-371b2c054362.png"
+                alt="ГрандТехРесурс"
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="font-ibm text-[12px] text-[#454b56] leading-relaxed max-w-xs mb-4">
               Поставка смазочных материалов для грузовых и легковых автомобилей, снабжение промышленных предприятий.

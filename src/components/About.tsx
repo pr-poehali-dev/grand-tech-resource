@@ -43,13 +43,9 @@ export default function About() {
 
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Section header */}
-        <div className="flex items-start gap-8 mb-16">
-          <div className="hidden md:block">
-            <div className="font-mono-ibm text-[#d97706] text-[11px] tracking-[0.3em] vertical-text opacity-60 writing-vertical" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
-              О КОМПАНИИ
-            </div>
-          </div>
-          <div className="flex-1">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Text */}
+          <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-px bg-[#d97706]" />
               <span className="font-mono-ibm text-[#d97706] text-[11px] tracking-[0.3em] uppercase">О компании</span>
@@ -58,7 +54,7 @@ export default function About() {
               НАДЁЖНЫЙ ПАРТНЁР<br />
               <span className="text-[#d97706]">В ПРОМЫШЛЕННОСТИ</span>
             </h2>
-            <div className="grid md:grid-cols-2 gap-6 max-w-3xl">
+            <div className="space-y-4">
               <p className="font-ibm text-[#9ca3af] leading-relaxed">
                 ГрандТехРесурс — ведущий поставщик смазочных материалов для автомобильного транспорта
                 и промышленных предприятий. Более 15 лет мы обеспечиваем надёжное снабжение B2B клиентов
@@ -70,6 +66,29 @@ export default function About() {
                 Высокая надёжность поставляемых материалов гарантирует работу вашей техники.
               </p>
             </div>
+          </div>
+
+          {/* Image */}
+          <div className="relative">
+            <div className="absolute -inset-2 bg-gradient-to-br from-[#d97706]/10 to-transparent rounded-sm blur-xl" />
+            <div className="relative clip-corner-lg overflow-hidden border border-[rgba(255,255,255,0.07)]">
+              <img
+                src="https://cdn.poehali.dev/projects/f95b400b-6e56-46c5-9ed2-d0ebf9bd3cc6/bucket/79e31da9-bf71-4981-81cc-0a26ec4b2969.png"
+                alt="Команда ГрандТехРесурс"
+                className="w-full h-72 object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0e1015]/60 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <div className="font-mono-ibm text-[10px] text-[#d97706] tracking-[0.2em] uppercase">
+                  Профессиональная команда · 15+ лет опыта
+                </div>
+              </div>
+            </div>
+            {/* Corner accents */}
+            <div className="absolute top-0 right-0 w-6 h-px bg-[#d97706]" />
+            <div className="absolute top-0 right-0 w-px h-6 bg-[#d97706]" />
+            <div className="absolute bottom-0 left-0 w-6 h-px bg-[#d97706]" />
+            <div className="absolute bottom-0 left-0 w-px h-6 bg-[#d97706]" />
           </div>
         </div>
 

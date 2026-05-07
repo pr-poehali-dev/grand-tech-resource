@@ -1,6 +1,6 @@
 import Icon from '@/components/ui/icon';
 
-const IMG = 'https://cdn.poehali.dev/projects/f95b400b-6e56-46c5-9ed2-d0ebf9bd3cc6/files/c8142054-5015-447d-8b56-1273fbd17031.jpg';
+const IMG = 'https://cdn.poehali.dev/projects/f95b400b-6e56-46c5-9ed2-d0ebf9bd3cc6/bucket/734ddc7c-9e19-4e36-b0b0-0ef8e679515d.png';
 
 const stats = [
   { value: '15+', label: 'лет на рынке' },
@@ -19,9 +19,9 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img src={IMG} alt="Промышленное оборудование" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0b0d] via-[#0a0b0d]/85 to-[#0a0b0d]/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0b0d] via-transparent to-transparent" />
+        <img src={IMG} alt="ГрандТехРесурс — промышленные смазочные материалы" className="w-full h-full object-cover object-center" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0b0d] via-[#0a0b0d]/80 to-[#0a0b0d]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0b0d] via-[#0a0b0d]/30 to-[#0a0b0d]/50" />
       </div>
 
       {/* Grid texture overlay */}
