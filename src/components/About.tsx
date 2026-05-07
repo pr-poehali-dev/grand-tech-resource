@@ -74,19 +74,57 @@ export default function About() {
             </div>
           </div>
 
-          {/* Segment chips */}
-          <div className="grid grid-cols-2 gap-2 lg:mt-20">
-            {segments.map((s, i) => (
-              <div key={i} className="flex items-center gap-3 p-3 border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.02)]">
-                <div className="w-7 h-7 flex-shrink-0 flex items-center justify-center bg-[rgba(217,119,6,0.1)] clip-corner">
-                  <Icon name={s.icon} fallback="Zap" size={13} className="text-[#d97706]" />
-                </div>
-                <div>
-                  <div className="font-oswald text-[12px] text-white tracking-wide leading-tight">{s.label}</div>
-                  <div className="font-ibm text-[10px] text-[#454b56] leading-tight mt-0.5">{s.sub}</div>
-                </div>
+          {/* Team photo + segment chips */}
+          <div className="flex flex-col gap-4 lg:mt-4">
+            {/* Team image */}
+            <div className="relative clip-corner-lg overflow-hidden border border-[rgba(255,255,255,0.07)]">
+              <img
+                src="https://cdn.poehali.dev/projects/f95b400b-6e56-46c5-9ed2-d0ebf9bd3cc6/files/04fc748c-93ad-4f61-b2da-803337663fce.jpg"
+                alt="Команда специалистов ГрандТехРесурс"
+                className="w-full h-52 object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0e1015]/70 via-transparent to-transparent" />
+              <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between">
+                <span className="font-mono-ibm text-[10px] text-[#d97706] tracking-[0.2em] uppercase">Профессиональная команда</span>
+                <span className="font-mono-ibm text-[10px] text-[#6b7280]">15+ лет опыта</span>
               </div>
-            ))}
+              <div className="absolute top-0 right-0 w-5 h-px bg-[#d97706]" />
+              <div className="absolute top-0 right-0 w-px h-5 bg-[#d97706]" />
+            </div>
+
+            {/* Segment chips */}
+            <div className="grid grid-cols-2 gap-2">
+              {segments.map((s, i) => (
+                <div key={i} className="flex items-center gap-3 p-3 border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.02)]">
+                  <div className="w-7 h-7 flex-shrink-0 flex items-center justify-center bg-[rgba(217,119,6,0.1)] clip-corner">
+                    <Icon name={s.icon} fallback="Zap" size={13} className="text-[#d97706]" />
+                  </div>
+                  <div>
+                    <div className="font-oswald text-[12px] text-white tracking-wide leading-tight">{s.label}</div>
+                    <div className="font-ibm text-[10px] text-[#454b56] leading-tight mt-0.5">{s.sub}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Oil visual banner */}
+        <div className="relative mb-6 clip-corner-lg overflow-hidden border border-[rgba(255,255,255,0.07)] h-40">
+          <img
+            src="https://cdn.poehali.dev/projects/f95b400b-6e56-46c5-9ed2-d0ebf9bd3cc6/files/7092b6e1-3aea-4a3d-8875-14c4b31cd1fe.jpg"
+            alt="Смазочные материалы высокого качества"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0e1015]/90 via-[#0e1015]/40 to-transparent" />
+          <div className="absolute inset-0 flex items-center px-8">
+            <div>
+              <div className="font-mono-ibm text-[10px] text-[#d97706] tracking-[0.3em] uppercase mb-1">Наши преимущества</div>
+              <div className="font-oswald text-2xl text-white font-bold tracking-wide">
+                КАЧЕСТВО, ПОДТВЕРЖДЁННОЕ<br />
+                <span className="text-[#d97706]">ПРАКТИКОЙ</span>
+              </div>
+            </div>
           </div>
         </div>
 

@@ -17,11 +17,19 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-[#0a0b0d]" />
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src="https://cdn.poehali.dev/projects/f95b400b-6e56-46c5-9ed2-d0ebf9bd3cc6/files/56dcfee4-89d3-47a8-9e66-5aa5a323834d.jpg"
+          alt="Газопоршневая установка"
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0b0d] via-[#0a0b0d]/85 to-[#0a0b0d]/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0b0d] via-transparent to-[#0a0b0d]/50" />
+      </div>
 
       {/* Grid texture overlay */}
-      <div className="absolute inset-0 texture-grid opacity-60" />
+      <div className="absolute inset-0 texture-grid opacity-40" />
 
       {/* Corner accent */}
       <div className="absolute top-0 right-0 w-64 h-64 opacity-20">
